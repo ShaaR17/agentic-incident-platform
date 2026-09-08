@@ -1,0 +1,17 @@
+{
+  "incident_id": "INC-001",
+  "service": "payment-service",
+  "severity": "P1",
+  "status": "resolved",
+  "timestamp": "2026-09-08T10:32:15Z",
+  "title": "Payment API high error rate",
+  "description": "Customers are experiencing failures when attempting to complete payments.",
+  "alert": "Payment API error rate exceeded 20%",
+  "symptoms": [
+    "Payment requests returning HTTP 500",
+    "High database connection usage",
+    "Payment API latency increased"
+  ],
+  "root_cause": "Database connection pool exhaustion",
+  "resolution": "Restarted payment-service and increased database connection pool size from 50 to 100."
+}

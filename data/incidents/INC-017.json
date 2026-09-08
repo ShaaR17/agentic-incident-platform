@@ -1,0 +1,17 @@
+{
+  "incident_id": "INC-017",
+  "service": "payment-service",
+  "severity": "P1",
+  "status": "resolved",
+  "timestamp": "2026-08-21T14:15:00Z",
+  "title": "Payment service failures caused by connection pool exhaustion",
+  "description": "Payment requests experienced elevated failures because the payment service exhausted its database connection pool.",
+  "symptoms": [
+    "HTTP 500 payment errors",
+    "Database connection pool at 100%",
+    "Failed database connection acquisition"
+  ],
+  "root_cause": "Database connection pool was too small for increased traffic.",
+  "resolution": "Increased connection pool size from 30 to 75 and restarted the payment service.",
+  "lessons_learned": "Monitor database connection pool utilization and alert when utilization exceeds 85%."
+}

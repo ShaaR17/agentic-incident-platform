@@ -1,0 +1,13 @@
+{
+  "service": "payment-service",
+  "time_window": "2026-09-08T10:30:00Z/2026-09-08T10:33:00Z",
+  "metrics": {
+    "error_rate_percent": 27,
+    "request_latency_ms": 1850,
+    "database_connection_utilization_percent": 100,
+    "database_active_connections": 50,
+    "database_connection_pool_max": 50,
+    "cpu_percent": 61,
+    "memory_percent": 68
+  }
+}

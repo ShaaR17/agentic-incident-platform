@@ -1,0 +1,15 @@
+2026-09-08T10:30:51Z INFO  Payment request received request_id=REQ-1001
+2026-09-08T10:30:52Z INFO  Processing payment request_id=REQ-1001
+2026-09-08T10:30:53Z INFO  Calling payment database request_id=REQ-1001
+2026-09-08T10:30:53Z WARN  Database connection pool usage: 96%
+2026-09-08T10:30:54Z ERROR Failed to acquire database connection request_id=REQ-1002
+2026-09-08T10:30:54Z ERROR Connection pool exhausted active_connections=50 max_connections=50
+2026-09-08T10:30:55Z ERROR Payment request failed request_id=REQ-1002 status=500
+2026-09-08T10:30:56Z WARN  Database connection pool usage: 100%
+2026-09-08T10:30:57Z ERROR Failed to acquire database connection request_id=REQ-1003
+2026-09-08T10:30:58Z ERROR Payment request failed request_id=REQ-1003 status=500
+2026-09-08T10:31:02Z ERROR Connection pool exhausted active_connections=50 max_connections=50
+2026-09-08T10:31:05Z ERROR Payment request failed request_id=REQ-1004 status=500
+2026-09-08T10:31:10Z WARN  Payment API error rate: 23%
+2026-09-08T10:31:20Z WARN  Payment API error rate: 27%
+2026-09-08T10:32:15Z ALERT Payment API error rate exceeded threshold: 20%
